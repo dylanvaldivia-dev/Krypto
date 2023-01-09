@@ -26,12 +26,13 @@ import Container from "./Container.astro";
         >
       </div>
     </div>
-    <div class="relative">
-      <img src="./computer.webp" alt="" class="w-[400px] aspect-[265/268]" />
+    <div class="flex flex-row relative">
+      
       <div
-        class="absolute w-[300px] h-[300px] bg-[#AAD9D9] filter blur-[100px] rounded-full left-96 bottom-2"
+        class=" w-[300px] h-[300px] bg-[#AAD9D9] filter blur-[100px] rounded-full absolute left-0 bottom-0 md:left-24 md:bottom-12"
       >
       </div>
+      <img src="./computer.webp" alt="" class="w-[400px] aspect-[265/268] z-10" />
     </div>
   </section>
 </Container>
