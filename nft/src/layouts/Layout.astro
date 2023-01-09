@@ -1,0 +1,36 @@
+---
+export interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content="The best cryptos to add in your wallet" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="bg-[#000235] max-w-[1440px] mx-auto body">
+    <slot />
+  </body>
+</html>
+<style>
+  body::-webkit-scrollbar {
+    width: 12px; /* width of the entire scrollbar */
+  }
+
+  body::-webkit-scrollbar-track {
+    background: transparent; /* color of the tracking area */
+  }
+
+  body::-webkit-scrollbar-thumb {
+    background-color: #aad9d9; /* color of the scroll thumb */
+    border-radius: 26px; /* roundness of the scroll thumb */
+  }
+</style>
